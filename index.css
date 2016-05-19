@@ -1,0 +1,34 @@
+.play-container {
+  perspective: 700;
+}
+
+.play {
+  border-radius: 25px;
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  background: orange;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.play:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.4px;
+  width: 100px;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+#center {
+ text-align: center;
+}
+
