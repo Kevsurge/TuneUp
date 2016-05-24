@@ -10,9 +10,13 @@ $(document).ready(function(){
     stopRandom();
   });
 });
+
+
 function playRandom(){
   findSong($("#genre").val());
 }
+
+
 function findSong(genre){
   SC.get('/tracks' , {
     genres: genre ,
@@ -25,9 +29,11 @@ function findSong(genre){
   });
 }
 
+
 function stopRandom() {
   currentSong.pause();
 }
+
 
 var currentSong = null; // The song that is currently playing
 function playTrack(trackid) {
@@ -35,6 +41,8 @@ function playTrack(trackid) {
     // TODO: stop the current song
     currentSong.pause();
   }
+
+
 
 SC.stream('/tracks/' + trackid).then(function(player) {
     player.play();

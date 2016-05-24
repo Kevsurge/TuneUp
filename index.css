@@ -4,19 +4,21 @@
 
 .play {
   border-radius: 25px;
-  margin: 20px;
+  margin: 40px;
   height: 100px;
   width: 100px;
   background: orange;
   transition: all 0.8s ease;
   transform-style: preserve-3d;
+  text-align: center;
 }
 
 .play:hover {
   transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +30,16 @@
 .back {
   transform: rotateY(180deg);
 }
-#center {
- text-align: center;
+
+
+body {
+  padding-top: 100px;
+
+}
+.container {
+  max-width: 730px;
+}
+.jumbotron{
+  text-align: center;
 }
 
