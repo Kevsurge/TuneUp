@@ -7,10 +7,11 @@
   margin: 40px;
   height: 100px;
   width: 100px;
-  background: orange;
+  background: #4169E1;
   transition: all 0.8s ease;
   transform-style: preserve-3d;
   text-align: center;
+  
 }
 
 .play:hover {
@@ -39,7 +40,9 @@ body {
 .container {
   max-width: 730px;
 }
-.jumbotron{
+.jumbotron:hover{
   text-align: center;
+  background: #DC143C;
+  transition: all 2.5s ease;
+  opacity: 1;
 }
-
